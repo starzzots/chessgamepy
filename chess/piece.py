@@ -33,28 +33,48 @@ class Pawn(Piece):
 class Rook(Piece):
 
     def __init__(self, color):
+        if color == 'white':
+            self.dir = -1
+        else:
+            self.dir = 1
         super().__init__('rook', color)
 
 
 class Bishop(Piece):
 
     def __init__(self, color):
+        if color == 'white':
+            self.dir = -1
+        else:
+            self.dir = 1
         super().__init__('bishop', color)
 
 
 class Knight(Piece):
 
     def __init__(self, color):
+        if color == 'white':
+            self.dir = -1
+        else:
+            self.dir = 1
         super().__init__('knight', color)
 
 
 class Queen(Piece):
 
     def __init__(self, color):
+        if color == 'white':
+            self.dir = -1
+        else:
+            self.dir = 1
         super().__init__('queen', color)
 
 
 class King(Piece):
 
     def __init__(self, color):
-        super().__init__('king', color)
+        if color == 'white':
+            self.dir = -1
+        else:
+            self.dir = 1
+        super().__init__('king', color,)
